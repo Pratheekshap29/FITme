@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".BmiActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="313dp"
+        android:layout_height="471dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="160dp"
+        app:cardBackgroundColor="#393e46"
+        app:cardCornerRadius="25dp">
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/input_bg2"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Height in cm"
+            android:inputType="textPersonName"
+            android:shadowColor="#FAF6F6"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/input_bg2"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Weight in Kg"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="193dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="300dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/input_bg2"
+            android:gravity="center"
+            android:text="Calculate"
+            android:textStyle="bold"
+            app:backgroundTint="#00ADB5" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:fontFamily="@font/salsa"
+            android:gravity="center"
+            android:text="BMI CALCULATOR"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

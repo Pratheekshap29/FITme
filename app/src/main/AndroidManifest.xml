@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.workoutapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.SET_ALARM"></uses-permission-sdk-23>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FITme"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WorkoutApp">
+        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".BmiActivity" />
+        <activity android:name=".DelayActivity" />
+        <activity android:name=".WorkoutTimerActivity" />
+        <activity android:name=".addworkout" />
+        <activity
+            android:name=".WorkoutActivity"
+            android:label="@string/title_activity_workout"
+            android:theme="@style/Theme.WorkoutApp.NoActionBar" />
+        <activity android:name=".addroutine" />
+        <activity android:name=".RoutineActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.WorkoutApp.NoActionBar" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".AlarmReceiver"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

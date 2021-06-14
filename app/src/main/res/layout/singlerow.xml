@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/delay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="12dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    tools:ignore="NamespaceTypo">
+
+    <RelativeLayout
+        android:id="@+id/ROUTINE"
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/workoutNameText"
+            android:layout_width="144dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="182dp"
+            android:layout_marginRight="182dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/acme"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Routine Name" />
+
+        <TextView
+            android:id="@+id/workoutDelayText"
+            android:layout_width="87dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="259dp"
+            android:layout_marginLeft="259dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/acme"
+            android:text="Delay"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/show"
+            android:layout_width="140dp"
+            android:layout_height="59dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="201dp"
+            android:layout_marginLeft="201dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:text="Show"
+            android:background="@drawable/input_bg"
+            app:backgroundTint="#00ADB5" />
+
+        <ImageButton
+            android:id="@+id/editRoutineBtn"
+            android:layout_width="100dp"
+            android:layout_height="74dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="111dp"
+            android:layout_marginEnd="208dp"
+            android:layout_marginRight="208dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/btn_bg"
+            android:tint="@color/black"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/deleteRoutineBtn"
+            android:layout_width="100dp"
+            android:layout_height="77dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="211dp"
+            android:layout_marginLeft="211dp"
+            android:layout_marginTop="113dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/btn_bg"
+            android:tint="@color/black"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
